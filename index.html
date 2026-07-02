@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cowan Building Treatments — Add 10–15 Years to the Roof You Already Have | Chatham-Kent, ON</title>
+<meta name="description" content="Cowan Building Treatments uses GoNano nanotechnology to restore and protect asphalt shingles, wood, and concrete across Chatham-Kent, Ontario. An eco-friendly alternative to full replacement. As seen on Dragon's Den." />
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    /* --- palette: bone base, charcoal ink, spruce brand, copper accent --- */
+    --paper:      #F3EFE6;
+    --paper-2:    #EAE4D6;
+    --ink:        #1B1A16;
+    --ink-soft:   #45433B;
+    --spruce:     #1F3D2F;
+    --spruce-2:   #2C5641;
+    --copper:     #B65A2B;
+    --copper-dk:  #9A4A22;
+    --line:       #D8D0BF;
+    --line-dk:    rgba(27,26,22,.14);
+    --white:      #FBFAF6;
+
+    --f-display: "Fraunces", Georgia, serif;
+    --f-body:    "Inter Tight", system-ui, -apple-system, sans-serif;
+
+    --wrap: 1180px;
+    --gutter: clamp(20px, 5vw, 64px);
+    --r: 4px;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  body{
+    font-family:var(--f-body);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    font-size:clamp(16px,1.05vw,17px);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  ::selection{ background:var(--spruce); color:var(--paper); }
+
+  .wrap{ max-width:var(--wrap); margin:0 auto; padding-inline:var(--gutter); }
+
+  .eyebrow{
+    font-size:.74rem; letter-spacing:.22em; text-transform:uppercase;
+    font-weight:600; color:var(--copper-dk);
+    display:inline-flex; align-items:center; gap:.6em;
+  }
+  .eyebrow::before{ content:""; width:26px; height:1px; background:var(--copper); display:inline-block; }
+  .eyebrow.center{ justify-content:center; }
+
+  h1,h2,h3{ font-family:var(--f-display); font-weight:600; line-height:1.02; letter-spacing:-.02em; color:var(--ink); }
+  .display{ font-size:clamp(2.6rem, 7.2vw, 5.4rem); font-weight:600; line-height:.98; letter-spacing:-.03em; }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:.6em;
+    font-family:var(--f-body); font-weight:600; font-size:.98rem;
+    padding:.95em 1.5em; border-radius:var(--r);
+    border:1.5px solid transparent; cursor:pointer;
+    transition:transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+    min-height:48px;
+  }
+  .btn-primary{ background:var(--spruce); color:var(--paper); }
+  .btn-primary:hover{ background:var(--spruce-2); transform:translateY(-2px); }
+  .btn-ghost{ background:transparent; color:var(--ink); border-color:var(--line-dk); }
+  .btn-ghost:hover{ border-color:var(--ink); transform:translateY(-2px); }
+  .btn .arrow{ transition:transform .2s ease; }
+  .btn:hover .arrow{ transform:translate(3px,-3px); }
+
+  /* ---------------- HEADER ---------------- */
+  header.site{
+    position:sticky; top:0; z-index:60;
+    background:rgba(243,239,230,.86);
+    backdrop-filter:saturate(140%) blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{ display:flex; align-items:center; justify-content:space-between; height:74px; }
+  .brand{ display:flex; align-items:center; gap:.7em; line-height:1; }
+  .brand .mark{
+    width:36px; height:36px; border-radius:50%; flex:none;
+    background:var(--spruce); color:var(--paper);
+    display:grid; place-items:center; font-family:var(--f-display); font-weight:600; font-size:1.15rem;
+  }
+  .brand b{ font-family:var(--f-display); font-size:1.14rem; font-weight:600; letter-spacing:-.01em; }
+  .brand span{ display:block; font-size:.64rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; margin-top:2px; }
+  .nav-links{ display:flex; align-items:center; gap:2rem; }
+  .nav-links a{ font-size:.93rem; font-weight:500; color:var(--ink-soft); transition:color .15s; }
+  .nav-links a:hover{ color:var(--ink); }
+  .nav-cta{ display:flex; align-items:center; gap:1.1rem; }
+  .nav-tel{ font-weight:600; font-size:.95rem; white-space:nowrap; }
+  .nav-tel:hover{ color:var(--copper-dk); }
+  .burger{ display:none; background:none; border:0; cursor:pointer; padding:8px; }
+  .burger span{ display:block; width:24px; height:2px; background:var(--ink); margin:5px 0; transition:.25s; }
+
+  /* ---------------- HERO ---------------- */
+  .hero{ position:relative; padding-top:clamp(48px,7vw,86px); padding-bottom:clamp(40px,6vw,72px); }
+  .hero-grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(28px,4vw,60px); align-items:center; }
+  .hero-copy .display{ margin:.28em 0 .1em; }
+  .hero-copy .display em{ font-style:italic; color:var(--spruce); font-weight:500; }
+  .hero-lede{ font-size:1.14rem; color:var(--ink-soft); max-width:34ch; margin:1.1rem 0 1.8rem; }
+  .hero-actions{ display:flex; gap:.9rem; flex-wrap:wrap; align-items:center; }
+  .hero-note{ margin-top:1.6rem; font-size:.86rem; color:var(--ink-soft); display:flex; align-items:center; gap:.6em; }
+  .hero-note svg{ flex:none; }
+
+  .hero-media{ position:relative; }
+  .hero-media .frame{
+    position:relative; border-radius:6px; overflow:hidden;
+    box-shadow:0 30px 60px -30px rgba(27,26,22,.5);
+    aspect-ratio:4/5;
+  }
+  .hero-media .frame img{ width:100%; height:100%; object-fit:cover; }
+  /* subtle legibility scrim only — no decorative color gradient */
+  .hero-media .frame::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(to top, rgba(20,32,26,.55), rgba(20,32,26,0) 45%);
+  }
+  .hero-badge{
+    position:absolute; left:-14px; bottom:26px; z-index:3;
+    background:var(--paper); border:1px solid var(--line);
+    border-radius:6px; padding:14px 18px; max-width:220px;
+    box-shadow:0 18px 40px -24px rgba(27,26,22,.5);
+  }
+  .hero-badge b{ font-family:var(--f-display); font-size:2.1rem; font-weight:600; color:var(--spruce); display:block; line-height:1; }
+  .hero-badge small{ font-size:.78rem; color:var(--ink-soft); display:block; margin-top:4px; line-height:1.35; }
+
+  /* water beading dots — signature motif */
+  .beads{ position:absolute; inset:0; z-index:2; pointer-events:none; overflow:hidden; border-radius:6px; }
+  .bead{
+    position:absolute; border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, rgba(255,255,255,.9), rgba(255,255,255,.15) 45%, rgba(255,255,255,0) 70%);
+    box-shadow: inset 0 -1px 2px rgba(255,255,255,.4), 0 1px 2px rgba(0,0,0,.18);
+    animation:drip var(--d,7s) ease-in infinite; opacity:0;
+  }
+  @keyframes drip{
+    0%{ transform:translateY(0) scale(1); opacity:0; }
+    12%{ opacity:.9; }
+    70%{ opacity:.9; transform:translateY(0) scale(1); }
+    100%{ transform:translateY(140px) scale(.6); opacity:0; }
+  }
+
+  /* ---------------- MARQUEE / TRUST ---------------- */
+  .trust{ border-block:1px solid var(--line); background:var(--paper-2); }
+  .trust .wrap{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1.4rem; padding-block:20px; }
+  .trust-item{ display:flex; align-items:center; gap:.7em; font-size:.9rem; font-weight:500; color:var(--ink-soft); }
+  .trust-item svg{ flex:none; color:var(--spruce); }
+  .trust-item b{ color:var(--ink); font-weight:600; }
+
+  /* ---------------- SECTIONS ---------------- */
+  section{ padding-block:clamp(64px,9vw,120px); }
+  .sec-head{ max-width:60ch; }
+  .sec-head h2{ font-size:clamp(2rem,4.4vw,3.2rem); margin:.4em 0 .3em; }
+  .sec-head p{ color:var(--ink-soft); font-size:1.08rem; max-width:52ch; }
+
+  /* problem / eco stats */
+  #impact{ background:var(--spruce); color:var(--paper); }
+  #impact .eyebrow{ color:#E8B48F; }
+  #impact .eyebrow::before{ background:#E8B48F; }
+  #impact h2{ color:var(--paper); }
+  #impact .sec-head p{ color:rgba(243,239,230,.72); }
+  .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; margin-top:56px; background:rgba(243,239,230,.16); border:1px solid rgba(243,239,230,.16); border-radius:6px; overflow:hidden; }
+  .stat{ background:var(--spruce); padding:30px 26px; }
+  .stat .n{ font-family:var(--f-display); font-size:clamp(2.4rem,4vw,3.1rem); font-weight:600; line-height:1; letter-spacing:-.02em; }
+  .stat .n .u{ font-size:1.1rem; color:#E8B48F; margin-left:2px; }
+  .stat p{ font-size:.92rem; color:rgba(243,239,230,.78); margin-top:.7em; }
+  .stat.hi .n{ color:#E8B48F; }
+  .src-note{ margin-top:22px; font-size:.8rem; color:rgba(243,239,230,.55); }
+
+  /* products */
+  .prod-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:clamp(18px,2.4vw,30px); margin-top:56px; }
+  .card{
+    position:relative; background:var(--white); border:1px solid var(--line);
+    border-radius:8px; overflow:hidden; display:flex; flex-direction:column;
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .card:hover{ transform:translateY(-4px); box-shadow:0 26px 50px -34px rgba(27,26,22,.55); border-color:var(--copper); }
+  .card .ph{ aspect-ratio:16/10; overflow:hidden; background:var(--paper-2); }
+  .card .ph img{ width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+  .card:hover .ph img{ transform:scale(1.05); }
+  .card .body{ padding:26px 26px 28px; display:flex; flex-direction:column; flex:1; }
+  .card .tag{ font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--copper-dk); }
+  .card h3{ font-size:1.5rem; margin:.35em 0 .5em; }
+  .card p{ color:var(--ink-soft); font-size:.97rem; flex:1; }
+  .card .surf{ margin-top:1.3em; padding-top:1.1em; border-top:1px solid var(--line); font-size:.85rem; font-weight:600; color:var(--ink); display:flex; align-items:center; gap:.5em; }
+  .card .surf svg{ color:var(--spruce); }
+
+  /* process */
+  #process{ background:var(--paper-2); border-block:1px solid var(--line); }
+  .steps{ display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(20px,3vw,44px); margin-top:56px; counter-reset:step; }
+  .step{ position:relative; }
+  .step .num{ font-family:var(--f-display); font-size:1rem; font-weight:600; color:var(--copper); letter-spacing:.05em; }
+  .step h3{ font-size:1.3rem; margin:.5em 0 .4em; }
+  .step p{ color:var(--ink-soft); font-size:.94rem; }
+  .step:not(:last-child)::after{
+    content:""; position:absolute; top:8px; right:-22px; width:14px; height:14px;
+    border-top:2px solid var(--line-dk); border-right:2px solid var(--line-dk); transform:rotate(45deg);
+  }
+
+  /* why / split */
+  .split{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(30px,5vw,80px); align-items:center; }
+  .split .media{ border-radius:8px; overflow:hidden; aspect-ratio:5/4; box-shadow:0 30px 60px -36px rgba(27,26,22,.5); }
+  .split .media img{ width:100%; height:100%; object-fit:cover; }
+  .feat{ display:flex; gap:1em; padding:1.3em 0; border-bottom:1px solid var(--line); }
+  .feat:last-child{ border-bottom:0; }
+  .feat .ic{ flex:none; width:44px; height:44px; border-radius:50%; background:var(--paper-2); display:grid; place-items:center; color:var(--spruce); border:1px solid var(--line); }
+  .feat h3{ font-size:1.16rem; margin-bottom:.2em; }
+  .feat p{ color:var(--ink-soft); font-size:.95rem; }
+
+  /* about */
+  #about{ background:var(--spruce); color:var(--paper); }
+  #about .split .media{ aspect-ratio:4/5; }
+  #about .eyebrow{ color:#E8B48F; }
+  #about .eyebrow::before{ background:#E8B48F; }
+  #about h2{ color:var(--paper); font-size:clamp(2rem,4vw,2.9rem); margin:.35em 0 .6em; }
+  #about p.bio{ color:rgba(243,239,230,.82); font-size:1.05rem; margin-bottom:1.2em; }
+  .creds{ display:flex; gap:2rem; flex-wrap:wrap; margin-top:1.4em; }
+  .cred b{ font-family:var(--f-display); font-size:2rem; font-weight:600; color:#E8B48F; display:block; line-height:1; }
+  .cred small{ font-size:.85rem; color:rgba(243,239,230,.72); }
+
+  /* contact */
+  .contact-grid{ display:grid; grid-template-columns:.9fr 1.1fr; gap:clamp(32px,5vw,72px); margin-top:52px; align-items:start; }
+  .info-block{ margin-bottom:1.7em; }
+  .info-block .k{ font-size:.74rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--copper-dk); margin-bottom:.35em; }
+  .info-block .v{ font-size:1.06rem; font-weight:500; }
+  .info-block .v a:hover{ color:var(--copper-dk); }
+  .hours{ font-size:.98rem; }
+  .hours div{ display:flex; justify-content:space-between; max-width:280px; padding:.35em 0; border-bottom:1px dashed var(--line); }
+  .hours span:first-child{ color:var(--ink-soft); }
+  .hours span:last-child{ font-weight:500; }
+
+  form{ background:var(--white); border:1px solid var(--line); border-radius:10px; padding:clamp(24px,3vw,36px); }
+  .field{ margin-bottom:1.1em; }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:1em; }
+  label{ display:block; font-size:.82rem; font-weight:600; margin-bottom:.4em; color:var(--ink); }
+  input,select,textarea{
+    width:100%; font-family:var(--f-body); font-size:1rem; color:var(--ink);
+    background:var(--paper); border:1.5px solid var(--line); border-radius:var(--r);
+    padding:.8em .9em; transition:border-color .15s, box-shadow .15s; min-height:46px;
+  }
+  textarea{ resize:vertical; min-height:96px; }
+  input:focus,select:focus,textarea:focus{ outline:none; border-color:var(--spruce); box-shadow:0 0 0 3px rgba(31,61,47,.14); }
+  form .btn-primary{ width:100%; justify-content:center; margin-top:.4em; }
+  .form-ok{ display:none; background:var(--spruce); color:var(--paper); padding:1em; border-radius:var(--r); font-weight:500; margin-top:1em; }
+
+  /* footer */
+  footer.site{ background:var(--ink); color:rgba(243,239,230,.7); padding-block:52px 34px; }
+  footer .top{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:2rem; padding-bottom:32px; border-bottom:1px solid rgba(243,239,230,.14); }
+  footer .brand b{ color:var(--paper); }
+  footer .brand span{ color:rgba(243,239,230,.6); }
+  footer .brand .mark{ background:var(--copper); }
+  footer nav{ display:flex; gap:1.6rem; flex-wrap:wrap; }
+  footer nav a{ font-size:.92rem; color:rgba(243,239,230,.72); }
+  footer nav a:hover{ color:var(--paper); }
+  footer .bot{ margin-top:26px; font-size:.82rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:.6rem; color:rgba(243,239,230,.5); }
+
+  /* reveal */
+  .reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+
+  /* ---------------- RESPONSIVE ---------------- */
+  @media(max-width:960px){
+    .hero-grid{ grid-template-columns:1fr; }
+    .hero-media{ order:-1; max-width:440px; }
+    .stat-grid{ grid-template-columns:repeat(2,1fr); }
+    .steps{ grid-template-columns:repeat(2,1fr); gap:34px; }
+    .step:nth-child(2)::after{ display:none; }
+    .split{ grid-template-columns:1fr; }
+    #about .split .media{ order:-1; max-width:400px; }
+    .contact-grid{ grid-template-columns:1fr; }
+  }
+  @media(max-width:720px){
+    .nav-links{
+      position:fixed; inset:74px 0 auto 0; flex-direction:column; align-items:flex-start;
+      gap:0; background:var(--paper); border-bottom:1px solid var(--line);
+      padding:8px var(--gutter) 20px; transform:translateY(-120%); transition:transform .3s ease; z-index:55;
+    }
+    .nav-links.open{ transform:none; }
+    .nav-links a{ width:100%; padding:14px 0; border-bottom:1px solid var(--line); font-size:1.05rem; }
+    .burger{ display:block; }
+    .nav-cta .btn{ display:none; }
+    .prod-grid{ grid-template-columns:1fr; }
+    .trust .wrap{ justify-content:flex-start; }
+  }
+  @media(max-width:440px){
+    .stat-grid{ grid-template-columns:1fr; }
+    .row2{ grid-template-columns:1fr; }
+    .hero-badge{ left:0; }
+    .creds{ gap:1.4rem; }
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    *{ animation:none !important; scroll-behavior:auto; }
+    .reveal{ opacity:1; transform:none; transition:none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Cowan Building Treatments home">
+      <span class="mark">C</span>
+      <span><b>Cowan</b><span>Building Treatments</span></span>
+    </a>
+    <nav class="nav-links" id="menu">
+      <a href="#products">Treatments</a>
+      <a href="#process">How It Works</a>
+      <a href="#why">Why GoNano</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-tel" href="tel:15197847096">519-784-7096</a>
+      <a class="btn btn-primary" href="#contact">Free Estimate</a>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Chatham-Kent, Ontario · As seen on Dragon's Den</span>
+      <h1 class="display">Add 10–15 years<br>to the roof you<br><em>already have.</em></h1>
+      <p class="hero-lede">Cowan Building Treatments seals and revives asphalt shingles, wood, and concrete with GoNano nanotechnology — a fraction of the cost and waste of tearing it all off.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Get a free estimate <span class="arrow">↗</span></a>
+        <a class="btn btn-ghost" href="#products">See the treatments</a>
+      </div>
+      <p class="hero-note">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        Made &amp; lab-tested in Canada · 5–15 year warranty
+      </p>
+    </div>
+
+    <div class="hero-media reveal">
+      <div class="frame">
+        <img src="https://static.wixstatic.com/media/50d4ea_916b01d0c9794f8ba42960d2aec90ce4~mv2.jpg" alt="A GoNano installation professional sealing an asphalt shingle roof" loading="eager" />
+        <div class="beads" aria-hidden="true"></div>
+      </div>
+      <div class="hero-badge">
+        <b>85%</b>
+        <small>less than the cost of a full replacement, on average</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 2.4 7.4H22l-6 4.3 2.3 7.3L12 16.7 5.7 21l2.3-7.3-6-4.3h7.6z"/></svg> Featured on <b>Dragon's Den</b></div>
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg> <b>Made in Canada</b>, for Canada</div>
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> <b>5–15 year</b> written warranty</div>
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Serving all of <b>Chatham-Kent</b></div>
+  </div>
+</div>
+
+<!-- IMPACT / ECO STATS -->
+<section id="impact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">It all adds up</span>
+      <h2>Restoring beats replacing —<br>for your wallet and the landfill.</h2>
+      <p>Every roof, deck, or driveway you protect instead of demolish is material that never becomes waste. The numbers are hard to argue with.</p>
+    </div>
+    <div class="stat-grid reveal">
+      <div class="stat">
+        <div class="n">19<span class="u">%</span></div>
+        <p>of construction waste sent to landfill comes from home improvement.</p>
+      </div>
+      <div class="stat">
+        <div class="n">23.5<span class="u">M</span></div>
+        <p>tons of home-improvement waste created every year.</p>
+      </div>
+      <div class="stat hi">
+        <div class="n">85<span class="u">%</span></div>
+        <p>of replacement cost saved with a single GoNano treatment.</p>
+      </div>
+      <div class="stat hi">
+        <div class="n">10–15</div>
+        <p>added years of surface life from one application.</p>
+      </div>
+    </div>
+    <p class="src-note">Waste figures reflect industry estimates for residential construction and renovation. Savings and lifespan based on GoNano field and laboratory testing.</p>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The GoNano range</span>
+      <h2>One nanotechnology,<br>four surfaces protected.</h2>
+      <p>GoNano sealers penetrate the surface and bond at a molecular level — locking material in, forcing water to bead off, and shrugging off UV, mold, and rot. Pick the surface; we'll bring the right formula.</p>
+    </div>
+
+    <div class="prod-grid">
+      <article class="card reveal">
+        <div class="ph"><img src="https://static.wixstatic.com/media/50d4ea_f8c5dd4a5ae047fbb6a15da153d78b97~mv2.jpg" alt="Asphalt shingle roof treated with GoNano Shingle Saver" loading="lazy" /></div>
+        <div class="body">
+          <span class="tag">For newer shingles</span>
+          <h3>GoNano Shingle Saver</h3>
+          <p>A nanotechnology roof treatment for newer asphalt shingles. Locks granules in place, repels water, and extends roof life — protection that starts working before the wear does.</p>
+          <div class="surf"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/></svg> Asphalt shingles</div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="ph"><img src="https://static.wixstatic.com/media/41880a_a9e39ed6e610462cabb704d5a86e918f~mv2.jpg" alt="Aging asphalt shingles restored with GoNano Revive" loading="lazy" /></div>
+        <div class="body">
+          <span class="tag">For aging shingles</span>
+          <h3>GoNano Revive</h3>
+          <p>Restores tired, brittle asphalt shingles. Improves flexibility, resists water, and buys years of life back — a genuine alternative to a premature tear-off.</p>
+          <div class="surf"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg> Weathered roofs</div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="ph"><img src="https://static.wixstatic.com/media/50d4ea_86a5522edcc04bcc9aad842dcc3d3f76~mv2.jpg" alt="Water beading on a deck treated with GoNano Wood Saver" loading="lazy" /></div>
+        <div class="body">
+          <span class="tag">For decks &amp; fences</span>
+          <h3>GoNano Wood Saver</h3>
+          <p>A penetrating treatment for decks, fences, and exterior wood. Repels water, UV damage, mold, and rot while preserving the wood's natural grain and colour.</p>
+          <div class="surf"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M8 4v16M12 4v16M16 4v16"/></svg> Exterior wood</div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="ph"><img src="https://static.wixstatic.com/media/50d4ea_a04c36cd303a4387929b973e0be0d03f~mv2.jpg" alt="Water droplets beading on concrete treated with GoNano Concrete Saver" loading="lazy" /></div>
+        <div class="body">
+          <span class="tag">For driveways &amp; floors</span>
+          <h3>GoNano Concrete Saver</h3>
+          <p>Seals driveways, walkways, and concrete floors against water and staining. Cuts freeze-thaw damage and keeps surfaces looking newer, for longer.</p>
+          <div class="surf"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v10H3z"/><path d="M3 12h18"/></svg> Concrete &amp; masonry</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>From estimate to protected<br>in a single visit.</h2>
+      <p>No tear-off. No dumpster. No days of noise. A GoNano treatment is a clean, one-day job — here's the whole sequence.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">Step 01</div><h3>Free estimate</h3><p>Greg assesses your surface on-site and gives you an honest, no-pressure quote — including whether treatment is even the right call.</p></div>
+      <div class="step reveal"><div class="num">Step 02</div><h3>Clean &amp; prep</h3><p>The surface is thoroughly cleaned so the nano sealer can penetrate and bond properly. Prep is where longevity is won.</p></div>
+      <div class="step reveal"><div class="num">Step 03</div><h3>Apply GoNano</h3><p>The right formula for your surface is applied evenly, sealing at a molecular level so water beads and rolls straight off.</p></div>
+      <div class="step reveal"><div class="num">Step 04</div><h3>Protected for years</h3><p>You're covered by a 5–15 year warranty and a surface that lasts 10–15 years longer — backed in writing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap split">
+    <div class="media reveal">
+      <img src="https://static.wixstatic.com/media/50d4ea_a4564aa8fc614347b045673e678e7c2f~mv2.jpg" alt="Canadian flag flying in front of the Peace Tower — GoNano is made and tested in Canada" loading="lazy" />
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Why GoNano</span>
+      <h2 style="font-size:clamp(2rem,4vw,2.9rem);margin:.4em 0 .3em;">Protection that pays for itself.</h2>
+      <div class="feat">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div><h3>Up to 85% cheaper than replacement</h3><p>Get most of the lifespan of a new roof, deck, or driveway without the tear-off invoice.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div><h3>One application, years of defense</h3><p>A single treatment adds 10–15 years of life and beads water off from day one.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
+        <div><h3>Genuinely eco-friendly</h3><p>Keeps tons of shingles, wood, and concrete out of the landfill — restoration over demolition.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <div><h3>Made &amp; tested in Canada</h3><p>Formulated for Canadian weather and proven in both field and lab before it touches your home.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap split">
+    <div class="media reveal">
+      <img src="https://static.wixstatic.com/media/50d4ea_8aab758133394ae1b603486757155468~mv2.jpg" alt="A brick and stucco Chatham-Kent home of the kind Greg Cowan protects with GoNano treatments" loading="lazy" />
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Meet the owner</span>
+      <h2>Greg Cowan, Chatham-Kent</h2>
+      <p class="bio">Greg is dedicated to preserving the integrity of your home with GoNano building treatments. Specializing in shingles, wood, and concrete, his work extends the lifespan of your materials, protects your investment, and keeps your home looking its best — all while contributing to a healthier, less wasteful way of maintaining a house.</p>
+      <p class="bio">"Let us save you money." It's not a slogan — it's the whole reason the business exists.</p>
+      <div class="creds">
+        <div class="cred"><b>6 yrs</b><small>roofing experience</small></div>
+        <div class="cred"><b>5 yrs</b><small>wood &amp; concrete work</small></div>
+        <div class="cred"><b>B.Eng</b><small>Environmental Engineering</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Free estimate</span>
+      <h2>Let's talk about your<br>building treatment needs.</h2>
+      <p>Fill out the form or give us a call. We'll get back to you with an honest assessment and a no-obligation quote.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="info-block">
+          <div class="k">Call or text</div>
+          <div class="v"><a href="tel:15197847096">519-784-7096</a></div>
+        </div>
+        <div class="info-block">
+          <div class="k">Email</div>
+          <div class="v"><a href="mailto:gregco@cowanbuildingtreatments.ca">gregco@cowanbuildingtreatments.ca</a></div>
+        </div>
+        <div class="info-block">
+          <div class="k">Service area</div>
+          <div class="v">Chatham-Kent, Ontario</div>
+        </div>
+        <div class="info-block">
+          <div class="k">Address</div>
+          <div class="v">19 Ivy Place, Chatham, ON N7L 5R7</div>
+        </div>
+        <div class="info-block">
+          <div class="k">Opening hours</div>
+          <div class="hours">
+            <div><span>Mon – Fri</span><span>9:00 am – 8:00 pm</span></div>
+            <div><span>Saturday</span><span>8:00 am – 5:30 pm</span></div>
+            <div><span>Sunday</span><span>8:00 am – 6:00 pm</span></div>
+          </div>
+        </div>
+      </div>
+
+      <form class="reveal" id="estimateForm" novalidate>
+        <div class="row2">
+          <div class="field"><label for="fn">First name</label><input id="fn" name="fn" type="text" autocomplete="given-name" required /></div>
+          <div class="field"><label for="ln">Last name</label><input id="ln" name="ln" type="text" autocomplete="family-name" required /></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="em">Email</label><input id="em" name="em" type="email" autocomplete="email" required /></div>
+          <div class="field"><label for="ph">Phone number</label><input id="ph" name="ph" type="tel" autocomplete="tel" /></div>
+        </div>
+        <div class="field"><label for="addr">Building address</label><input id="addr" name="addr" type="text" autocomplete="street-address" /></div>
+        <div class="field">
+          <label for="opt">Treatment option</label>
+          <select id="opt" name="opt">
+            <option>GoNano Shingle Saver</option>
+            <option>GoNano Revive</option>
+            <option>GoNano Wood Saver</option>
+            <option>GoNano Concrete Saver</option>
+            <option>Not sure — help me choose</option>
+          </select>
+        </div>
+        <div class="field"><label for="q">Questions?</label><textarea id="q" name="q" placeholder="Tell us about your roof, deck, or concrete…"></textarea></div>
+        <button class="btn btn-primary" type="submit">Request my free estimate <span class="arrow">↗</span></button>
+        <div class="form-ok" id="formOk">Thanks — your request is in. Greg will be in touch shortly.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="#top">
+        <span class="mark">C</span>
+        <span><b>Cowan</b><span>Building Treatments</span></span>
+      </a>
+      <nav>
+        <a href="#products">Treatments</a>
+        <a href="#process">How It Works</a>
+        <a href="#why">Why GoNano</a>
+        <a href="#about">About</a>
+        <a href="#contact">Free Estimate</a>
+      </nav>
+    </div>
+    <div class="bot">
+      <span>© <span id="yr"></span> Cowan Building Treatments · Chatham-Kent, Ontario</span>
+      <span>519-784-7096 · gregco@cowanbuildingtreatments.ca</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // mobile menu
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('menu');
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .14 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // water beads (signature motif) — skipped if reduced motion
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const beads = document.querySelector('.beads');
+  if (beads && !reduce) {
+    for (let i = 0; i < 14; i++) {
+      const b = document.createElement('span');
+      b.className = 'bead';
+      const size = 5 + Math.random() * 13;
+      b.style.width = b.style.height = size + 'px';
+      b.style.left = Math.random() * 96 + '%';
+      b.style.top = Math.random() * 78 + '%';
+      b.style.setProperty('--d', (5 + Math.random() * 6) + 's');
+      b.style.animationDelay = (Math.random() * 6) + 's';
+      beads.appendChild(b);
+    }
+  }
+
+  // form (demo submit)
+  const form = document.getElementById('estimateForm');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    document.getElementById('formOk').style.display = 'block';
+    form.querySelector('button').textContent = 'Sent ✓';
+    form.reset();
+  });
+</script>
+</body>
+</html>
